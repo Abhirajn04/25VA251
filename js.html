@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Introduction</title>
+</head>
+<body>
+    <h1>JavaScript Introduction</h1>
+    <p>This is a simple introduction to JavaScript.</p>
+
+    <script>
+        // This is a single-line comment in JavaScript
+
+        /*
+         This is a multi-line comment in JavaScript
+         It can span multiple lines
+        */
+
+        // Variables
+        var name = "Abhiraj Niranjan"; // Using var to declare a variable
+        let age = 18; // Using let to declare a variable
+        const PI = 3.14; // Using const to declare a constant
+
+        //Number
+        var myMob=687836363;
+        console.log(myName + "mobile number is " + myMob);
+
+        //Boolean
+        var isMarried = false;
+        console.log(myName + " is married?: " + isMarried); 
+
+        //Undefined
+        var myEmail;
+        console,log(myEmail);
+        console.log(typeof(myEmail));
+
+        //null
+        var myAddress=null;
+        console.log(myAddress);
+        console,log(typeof(myAddress));
+
+        //Bigint
+        var myVal=Bigint(7534653456345683465346783);
+        console.log(myVal);
+        console.log(typeof(myVal));
+
+        //symbol
+        var name1=Symbol("Abhiraj");
+        var name2=Symbol("Abhiraj");
+        console.log(name1 === name2); 
+
+
+        // Output to the console
+        console.log("Hello, " + name + "! You are " + age + " years old.");
+
+        // Functions
+        function greet() {
+            return "Welcome to JavaScript!";
+        }
+
+        console.log(greet());
+
+        // Arrays
+        let fruits = ["Apple", "Banana", "Cherry"];
+        console.log(fruits[0]); // Output: Apple
+
+        // Objects
+        let person = {
+            firstName: "Abhiraj",
+            lastName: "Niranjan",
+            age: 18,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+
+        console.log(person.fullName()); // Output: Jane Doe
+
+        //create an object using literal way....
+        let student={
+            name:"Abhiraj",
+            age:18,
+            isMarried:false,
+            address : {
+                city:"Pune",
+                state:"Maharashtra",
+                country:"India"
+            },
+            course: "B.Tech",
+            branch: "Computer Science",
+            year: 2022,
+            getInfo:function(){
+                return this.name + " is a " + this.course + " student in " + this.branch + " branch.";
+            },
+            subjects:["Maths","Physics","Chemistry"],
+            examDone:null
+        };
+        console.log(student);
+        console.log(typeof(student));
+    </script>
+    
+</body>
+</html>
